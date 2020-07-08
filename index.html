@@ -4,190 +4,203 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Job Listings</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  <!-- Item Start -->
-  Photosnap
-  New!
-  Featured
-  Senior Frontend Developer
-  1d ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Senior
-  <!-- Languages -->
-  HTML
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Manage
-  New!
-  Featured
-  Fullstack Developer
-  1d ago
-  Part Time
-  Remote
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  Python
-  <!-- Tools -->
-  React
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Account
-  New!
-  Junior Frontend Developer
-  2d ago
-  Part Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  MyHome
-  Junior Frontend Developer
-  5d ago
-  Contract
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  CSS
-  JavaScript
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Loop Studios
-  Software Engineer
-  1w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Ruby
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  FaceIt
-  Junior Backend Developer
-  2w ago
-  Full Time
-  UK only
-  <!-- Role -->
-  Backend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  Ruby
-  <!-- Tools -->
-  RoR
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Shortly
-  Junior Developer
-  2w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  HTML
-  JavaScript
-  <!-- Tools -->
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Insure
-  Junior Frontend Developer
-  2w ago
-  Full Time
-  USA only
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  Vue
-  Sass
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  Eyecam Co.
-  Full Stack Engineer
-  3w ago
-  Full Time
-  Worldwide
-  <!-- Role -->
-  Fullstack
-  <!-- Level -->
-  Midweight
-  <!-- Languages -->
-  JavaScript
-  Python
-  <!-- Tools -->
-  Django
-  <!-- Item End -->
-
-  <!-- Item Start -->
-  The Air Filter Company
-  Front-end Dev
-  1mo ago
-  Part Time
-  Worldwide
-  <!-- Role -->
-  Frontend
-  <!-- Level -->
-  Junior
-  <!-- Languages -->
-  JavaScript
-  <!-- Tools -->
-  React
-  Sass
-  <!-- Item End -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="page">
+<header class="page__header">
+  <div class="wrapper wrapper-header">
+    <div class="filter-bar">
+      <div class="filter-items">
+        <div class="filterItem-group">
+          <p class="a-filterItem">Frontend</p>
+          <img src="/img/icon-remove.svg" alt="close icon" class="img--remove">
+        </div>
+        <div class="filterItem-group">
+          <p class="a-filterItem">HTML</p>
+          <img src="/img/icon-remove.svg" alt="close icon" class="img--remove">
+        </div>
+        <div class="filterItem-group">
+          <p class="a-filterItem">CSS</p>
+          <img src="/img/icon-remove.svg" alt="close icon" class="img--remove">
+        </div>
+      </div>
+      <p class="clear-filter">clear</p>
+    </div>
   </div>
+</header>
+<main class="page__content">
+  <div class="wrapper wrapper-content">
+      <div class="m-card card">
+        <!-- Item Start -->
+        <img src="/img/photosnap.svg" alt="photosnap logo" class="img cart__img a-logoImg">
+        <div class="card__info m-cardInfo">
+          <div class="info__head">
+            <h2 class="info__name a-nameCompany">
+              Photosnap
+            </h2>
+            <p class="info_new a-new">
+              New!
+            </p>
+            <p class="info__featured a-featured">
+              Featured
+            </p>
+          </div>
+          <h3 class="info__position a-position">
+            Senior Frontend Developer
+          </h3>
+          <div class="info__sub">
+            <p class="info__post-date a-postDate">
+              1d ago
+            </p>
+            <p class="info__contract a-contract">
+              Full Time
+            </p>
+            <p class="info__location a-location">
+              USA only
+            </p>
+          </div>
+        </div>
+        <div class="card__categories m-categories">
+          <!-- Role -->
+          <button class="card__filter-item a-filterItem">Frontend</button>
+          <!-- Level -->
+          <button class="card__filter-item a-filterItem">Senior</button>
+          <!-- Languages -->
+          <button class="card__filter-item a-filterItem">HTML</button>
+          <button class="card__filter-item a-filterItem">CSS</button>
+          <button class="card__filter-item a-filterItem">JavaScript</button>
+          <!-- Item End -->
+        </div>      
+      </div>
+      <div class="m-card card">
+        <!-- Item Start -->
+        <img src="/img/manage.svg" alt="photosnap logo" class="img cart__img a-logoImg">
+        <div class="card__info m-cardInfo">
+          <div class="info__head">
+            <h2 class="info__name a-nameCompany">
+              Manage
+            </h2>
+            <p class="V a-new">
+              New!
+            </p>
+            <p class="info__featured a-featured">
+              Featured
+            </p>
+          </div>
+          <h3 class="info__position a-position">
+            Fullstack Developer
+          </h3>
+          <div class="info__sub">
+            <p class="info__post-date a-postDate">
+              1d ago
+            </p>
+            <p class="info__contract a-contract">
+              Part Time
+            </p>
+            <p class="info__location a-location">
+              Remote
+            </p>
+          </div>
+        </div>
+        <div class="card__categories m-categories">
+          <!-- Role -->
+          <button class="card__filter-item a-filterItem">Fullstack</button>
+          <!-- Level -->
+          <button class="card__filter-item a-filterItem">Midweight</button>
+          <!-- Languages -->
+          <button class="card__filter-item a-filterItem">Python</button>
+          <button class="card__filter-item a-filterItem">React</button>
+          <!-- Item End -->
+        </div>      
+      </div>
+      <div class="m-card card">
+        <!-- Item Start -->
+        <img src="/img/account.svg" alt="photosnap logo" class="img cart__img a-logoImg">
+        <div class="card__info m-cardInfo">
+          <div class="info__head">
+            <h2 class="info__name a-nameCompany">
+              Account
+            </h2>
+            <p class="info_new a-new">
+              New!
+            </p>
+          </div>
+          <h3 class="info__position a-position">
+            Junior Frontend Developer
+          </h3>
+          <div class="info__sub">
+            <p class="info__post-date a-postDate">
+              2d ago
+            </p>
+            <p class="info__contract a-contract">
+              Part Time
+            </p>
+            <p class="info__location a-location">
+              USA only
+            </p>
+          </div>
+        </div>
+        <div class="card__categories m-categories">
+          <!-- Role -->
+          <button class="card__filter-item a-filterItem">Frontend</button>
+          <!-- Level -->
+          <button class="card__filter-item a-filterItem">Junior</button>
+          <!-- Languages -->
+          <button class="card__filter-item a-filterItem">React</button>
+          <button class="card__filter-item a-filterItem">Sass</button>
+          <button class="card__filter-item a-filterItem">JavaScript</button>
+          <!-- Item End -->
+        </div>      
+      </div>
+      <div class="m-card card">
+        <!-- Item Start -->
+        <img src="/img/myhome.svg" alt="photosnap logo" class="img cart__img a-logoImg">
+        <div class="card__info m-cardInfo">
+          <div class="info__head">
+            <h2 class="info__name a-nameCompany">
+              MyHome
+            </h2>
+           </div>
+          <h3 class="info__position a-position">
+            Junior Frontend Developer
+          </h3>
+          <div class="info__sub">
+            <p class="info__post-date a-postDate">
+              5d ago
+            </p>
+            <p class="info__contract a-contract">
+              Contract
+            </p>
+            <p class="info__location a-location">
+              USA only
+            </p>
+          </div>
+        </div>
+        <div class="card__categories m-categories">
+          <!-- Role -->
+          <button class="card__filter-item a-filterItem">Frontend</button>
+          <!-- Level -->
+          <button class="card__filter-item a-filterItem">Junior</button>
+          <!-- Languages -->
+          <button class="card__filter-item a-filterItem">CSS</button>
+          <button class="card__filter-item a-filterItem">JavaScript</button>
+          <!-- Item End -->
+        </div>      
+      </div>
+
+  </div>
+</main>
+  <footer class="page__footer">
+        <div class="wrapper wrapper--footer">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link">Frontend Mentor</a>. 
+        Coded by <a href="#" class="link">AX-d</a>.
+      </div>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
 </body>
 </html>
