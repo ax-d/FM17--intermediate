@@ -126,7 +126,8 @@ button {
   padding: 0 0 8px 25px;
   border-radius: 5px;
   position: relative;
-  margin-bottom: 40px;
+  margin: 0 auto 40px auto;
+  max-width: 450px;
 
 }
 
@@ -256,13 +257,15 @@ button {
 /* end page__footer */
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1000px) {
   .page {
-    max-width: 1440px;
+    
+    margin: 0 auto;
   }
 
   .wrapper {
     padding: 0 165px;
+    max-width: 1440px;
   }
 
   /* start page__header  */
@@ -297,18 +300,19 @@ button {
     justify-content: flex-start;
     align-items: center;
     padding: 33px 0 19px 39px;
-    margin-bottom: 21px;
+    margin: 0 0 21px 0;
+    max-width: unset;
   }
 
   .a-logoImg {
-    width: 140px;
+    flex: 0 0 88px;
     margin: 0 0 14px 0;
     top: unset;
   }
 
   .m-cardInfo {
     margin: 0 0 0 23px;
-    flex: 1 0 270px;
+    flex: 1 0 300px;
   }
 
   .a-nameCompany {
@@ -345,6 +349,7 @@ button {
   .m-categories {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     margin: 0 27px 0 0;
   }
 
