@@ -72,7 +72,7 @@ function addToFilterBar(currentFilters) {
     let filterBarGroup = document.querySelectorAll('.filterItem-group');
     let hasFilter = false;
 
-    if (windowWidth < 1000){
+    if (windowWidth < 1000) {
         cardHousing.parentElement.classList.remove('heightItems');
     }
 
@@ -240,22 +240,38 @@ function showCards(jsonObj) {
 
         cardClass.appendChild(cardCategories);
 
-        for (let j = 0; j < jsonCards[i]['languages'].length; j++) {
-            const cardFilterItem = document.createElement('button');
+
+        function createButton() {
+            let cardFilterItem = document.createElement('button');
             cardFilterItem.classList = 'card__filter-item a-filterItem';
             cardFilterItem.type = 'button';
 
-            cardCategories.appendChild(cardFilterItem);
-            cardFilterItem.textContent = jsonCards[i]['languages'][j];
+            return cardFilterItem;
+        }
+
+        let filterItem = createButton();
+        filterItem.textContent = jsonCards[i]['role'];
+        cardCategories.appendChild(filterItem);
+
+
+        filterItem = createButton();
+        filterItem.textContent = jsonCards[i]['level'];
+        cardCategories.appendChild(filterItem);
+
+
+        for (let j = 0; j < jsonCards[i]['languages'].length; j++) {
+            let filterItem = createButton();
+
+            cardCategories.appendChild(filterItem);
+            filterItem.textContent = jsonCards[i]['languages'][j];
         }
 
         for (let j = 0; j < jsonCards[i]['tools'].length; j++) {
-            const cardFilterItem = document.createElement('button');
-            cardFilterItem.classList = 'card__filter-item a-filterItem';
-            cardFilterItem.type = 'button';
+            let filterItem = createButton();
 
-            cardCategories.appendChild(cardFilterItem);
-            cardFilterItem.textContent = jsonCards[i]['tools'][j];
+            cardCategories.appendChild(filterItem);
+            filterItem.textContent = jsonCards[i]['tools'][j];
+
         }
     }
 }
